@@ -1,0 +1,11 @@
+ultralytics>=8.3.74
+onnx>=1.13.1
+onnx-tf>=1.10.0
+tensorflow>=2.9.0
+PyYAML>=6.0.2
+torch>=2.5.1
+torchvision>=0.20.1
+opencv-python
+pandas
+seaborn
+matplotlib
