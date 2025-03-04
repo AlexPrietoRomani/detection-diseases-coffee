@@ -1,0 +1,16 @@
+# Modelos
+*.pt
+
+# Imagenes de datasets
+D1 - Coffee leaf diseases classification.v5i.yolov11/
+D2- Hojas de cafe enfermedades.v2i.yolov11/
+D6 - Coffee leaf disease.v2i.multiclass/
+D8 - Coffee Leaves Detection.v1i.yolov11/
+combinado/
+
+# Archivos temporales
+temp/
+
+# Ejecuciones de modelos
+runs/
+Modelo/
