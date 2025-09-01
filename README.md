@@ -1,17 +1,23 @@
 # Detección de Enfermedades en Plantas de Café
 
-Este proyecto desarrolla un sistema basado en **Deep Learning** para detectar enfermedades en hojas de café a partir de imágenes. Utilizando modelos de clasificación, el sistema ayuda a identificar la condición de las plantas de manera rápida y precisa.
+Este Trabajo Fin de Máster (TFM) utiliza imágenes capturadas por **drones** para detectar enfermedades en hojas de café y así habilitar aplicaciones focalizadas de insecticidas y fungicidas. El sistema se basa en técnicas de **Deep Learning** que permiten identificar rápidamente la condición de las plantas a partir de fotografías.
 
-Este proyecto usa como base un Fine Turning de YOLO para poder reentrenar el modelo y poder clasificar las imagenes o video para detectar enfermedades en café.
+Como punto de partida se realiza un *fine tuning* de YOLO para reentrenar el modelo y clasificar imágenes o video con el fin de detectar enfermedades en café.
 
 ## 📂 Estructura del Proyecto
 
 ```plaintext
 notebooks/           # Jupyter Notebooks de experimentación y modelado
-data/                # Archivos de datos (CSV de comparación de modelos)
-images/              # Imágenes de prueba usadas para validación
-predictions/         # Resultados y predicciones almacenadas
-models/              # Modelos entrenados exportados
+data/
+└── raw/
+    ├── created/     # Datos capturados con drones
+    └── online/      # Datos provenientes de fuentes externas
+models/
+└── base/            # Modelos pre-entrenados
+└── fine_tuned/      # Modelos ajustados con nuestros datos
+outputs/             # Resultados, métricas y artefactos generados
+src/                 # Scripts de entrenamiento e inferencia
+docs/                # Memoria del TFM y documentación adicional
 requirements.txt     # Librerías necesarias
 .gitignore           # Archivos ignorados por Git
 README.md            # Documentación general
@@ -39,13 +45,14 @@ Detectar enfermedades en hojas de café utilizando técnicas de aprendizaje auto
 
 ## 🚀 Cómo Usar
 
-1. Clona el repositorio:
+1. Clona el repositorio.
+2. Crea un entorno virtual (opcional pero recomendado).
+3. Instala las dependencias desde `requirements.txt`.
+4. Prepara los datos siguiendo las instrucciones en [`data/README.md`](data/README.md).
+5. Entrena un modelo ejecutando `python notebooks/Modelos.ipynb` o los scripts ubicados en `src/`.
+6. Realiza inferencias sobre nuevas imágenes mediante los scripts de `src/` o adaptando el notebook anterior.
 
-2. Crea un entorno virtual (opcional pero recomendado):
-
-3. Instala las dependencias:
-
-4. Abre y ejecuta los notebooks ubicados en la carpeta notebooks/.
+> La memoria del TFM y documentación adicional se encuentran en el directorio [`docs/`](docs/).
 
 ## 📈 Resultados
 
