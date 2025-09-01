@@ -1,28 +1,28 @@
-# Modelos
+## Ignored project directories
+data/
+models/
+outputs/
+
+## Model weights
 *.pt
+*.onnx
+*.tflite
 
-# Imagenes de datasets
-D1 - Coffee leaf diseases classification.v5i.yolov11/
-D2- Hojas de cafe enfermedades.v2i.yolov11/
-D6 - Coffee leaf disease.v2i.multiclass/
-D8 - Coffee Leaves Detection.v1i.yolov11/
-Dataset 4/
-Dataset 5/
-Dataset 9/
-combinado/
-
-# Archivos temporales
-temp/
-
-# Ejecuciones de modelos
-runs/
-Modelo/
-
-# No cargar imagenes
+## Media files
 *.jpg
 *.png
 *.jpeg
-*.jpeg
-*.zip
-*.tflite
 *.mp4
+*.zip
+
+## Notebook checkpoints and caches
+notebooks/.ipynb_checkpoints/
+__pycache__/
+
+## Log files
+*.log
+
+## Temporary and run artifacts
+temp/
+runs/
+Modelo/
